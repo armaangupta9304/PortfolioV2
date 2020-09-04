@@ -1,0 +1,50 @@
+.menu__buttons{
+    z-index: 5;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    font-size: xx-large;
+}
+
+.menu__options{
+    height: 0vh;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    transition: 0.4s ease-in;
+    z-index: 5;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.menu__options ul li{
+    height: inherit;
+    padding: 12px;
+}
+
+.menu__options ul{
+    list-style: none;
+}
+
+.closeMenu{
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    font-size: 50px;
+}
+
+.menu__options ul li a{
+    font-family: "Montserrat Alternates";
+    font-size: x-large;
+    transition: 0.3s ease;
+}
+
+.menu__options ul li a:hover{
+    color: tomato;
+    font-size: xx-large;
+}
