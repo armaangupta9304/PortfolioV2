@@ -1,8 +1,6 @@
 import React, {useState} from "react"
-import Navbar from "./Navbar"
-import Hamburger from "./NavbarMobile"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import Navbar from "./Navbar.jsx"
+import Hamburger from "./NavbarMobile.jsx"
 import "./App.css"
 
 function Hero(){
@@ -40,7 +38,7 @@ function Hero(){
           Blogs!
         </a>
         <a>
-          <FontAwesomeIcon icon={faGithub} size="2x"/>
+          <i class="fa fa-github fa-2x"></i>
         </a>
       </div>
     </div>

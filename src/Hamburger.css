@@ -36,15 +36,70 @@
     right: 30px;
     cursor: pointer;
     font-size: 50px;
+    padding: 10px 20px;
+    position: relative;
 }
 
 .menu__options ul li a{
     font-family: "Montserrat Alternates";
     font-size: x-large;
     transition: 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu__options ul li a::after{
+    content: '';
+    z-index: -1;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #ff4b5c;
+    transition: .3s ease-in;
+}
+
+.closeMenu::after{
+    content: '';
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    background-color: #ff4b5c;
+    transition: 0.3s ease-in;
+}
+
+.closeMenu:hover::after{
+    height: 100%;
 }
 
 .menu__options ul li a:hover{
-    color: tomato;
-    font-size: xx-large;
+    padding: 12px;
+}
+
+.menu__options ul li a:hover::after{
+    width: 100%;
+}
+
+.menu__buttons span{
+    position: relative;
+    padding: 10px 20px;
+}
+
+.menu__buttons span::after{
+    content: '';
+    width: 100%;
+    position: absolute;
+    height: 5%;
+    bottom: 0;
+    left: 0;
+    background-color: #ff4b5c;
+    transition: 0.3s ease-in;
+    z-index: -1;
+}
+.menu__buttons span:hover::after{
+    height: 100%;
 }
